@@ -25,7 +25,7 @@ uint8_t segdata[] = {
 };
 
 void bit_delay(void){
-    __delay_ms(10);
+    //__delay_ms(10);
 }
 
 void start(void){
@@ -121,6 +121,11 @@ void set_segments(const uint8_t segments[], uint8_t length, uint8_t pos){
     start();
     write_byte(COMM3 + (m_brightness & 0x0f));    
     stop();
+}
+
+void clear(){
+    uint8_t data[] = { 0, 0, 0, 0 };
+	set_segments(data, 4, 0);
 }
 
 uint8_t encode_digit(uint8_t digit){

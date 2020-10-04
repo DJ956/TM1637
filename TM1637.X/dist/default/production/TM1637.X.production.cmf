@@ -13,27 +13,28 @@
 %PSECTS
 $dist/default/production\TM1637.X.production.o
 cinit CODE 0 7EC 7EC 14 2
-text1 CODE 0 728 728 3A 2
-text2 CODE 0 762 762 3F 2
-text3 CODE 0 6CD 6CD 8 2
-text4 CODE 0 6DE 6DE 9 2
-text5 CODE 0 6D5 6D5 9 2
-text6 CODE 0 6FF 6FF 13 2
-text7 CODE 0 6C5 6C5 8 2
-text8 CODE 0 6E7 6E7 A 2
-text9 CODE 0 6B4 6B4 4 2
-text10 CODE 0 712 712 16 2
-text11 CODE 0 6BE 6BE 7 2
-maintext CODE 0 7A1 7A1 4B 2
-cstackCOMMON COMMON 1 70 70 C 1
-cstackBANK0 BANK0 1 2E 2E 8 1
-inittext CODE 0 6B8 6B8 6 2
-bssBANK0 BANK0 1 36 36 4 1
-idataBANK0 CODE 0 6F1 6F1 E 2
+text1 CODE 0 6D3 6D3 13 2
+text2 CODE 0 68E 68E 8 2
+text3 CODE 0 6C0 6C0 13 2
+text4 CODE 0 6FC 6FC 3A 2
+text5 CODE 0 736 736 3F 2
+text6 CODE 0 67C 67C 1 2
+text7 CODE 0 69F 69F 9 2
+text8 CODE 0 696 696 9 2
+text9 CODE 0 6A8 6A8 A 2
+text10 CODE 0 67D 67D 4 2
+text11 CODE 0 6E6 6E6 16 2
+text12 CODE 0 687 687 7 2
+maintext CODE 0 775 775 77 2
+cstackCOMMON COMMON 1 70 70 D 1
+cstackBANK0 BANK0 1 2E 2E A 1
+inittext CODE 0 681 681 6 2
+bssBANK0 BANK0 1 38 38 4 1
+idataBANK0 CODE 0 6B2 6B2 E 2
 dataBANK0 BANK0 1 20 20 E 1
-bssCOMMON COMMON 1 7C 7C 1 1
+bssCOMMON COMMON 1 7D 7D 1 1
 config CONFIG 4 8007 8007 2 2
-$C:\Users\dexte\AppData\Local\Temp\segg.o
+$C:\Users\dexte\AppData\Local\Temp\s6qo.o
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 2 2 2 2
 config CONFIG 4 8007 8007 2 2
@@ -43,19 +44,19 @@ config CONFIG 4 8007 8007 2 2
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 3A-6F 1
+RAM 3C-6F 1
 RAM A0-EF 1
 RAM 120-16F 1
 RAM 1A0-1EF 1
 RAM 220-24F 1
-BANK0 3A-6F 1
+BANK0 3C-6F 1
 BANK1 A0-EF 1
 BANK2 120-16F 1
 BANK3 1A0-1EF 1
 BANK4 220-24F 1
-CONST 4-6B3 2
+CONST 4-67B 2
 CONST 800-FFF 2
-ENTRY 4-6B3 2
+ENTRY 4-67B 2
 ENTRY 800-FFF 2
 IDLOC 8000-8003 2
 SFR10 500-56F 1
@@ -80,8 +81,8 @@ SFR28 E00-E6F 1
 SFR29 E80-EEF 1
 SFR30 F00-F6F 1
 SFR31 F80-FEF 1
-STACK 201A-216F 1
-CODE 4-6B3 2
+STACK 201C-216F 1
+CODE 4-67B 2
 CODE 800-FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
@@ -94,11 +95,10 @@ SFR7 380-3EF 1
 SFR8 400-46F 1
 SFR9 480-4EF 1
 BIGRAM 2000-216F 1
-COMMON 7D-7D 1
 EEDATA F000-F0FF 2
-STRCODE 4-6B3 2
+STRCODE 4-67B 2
 STRCODE 800-FFF 2
-STRING 4-6B3 2
+STRING 4-67B 2
 STRING 800-FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -114,140 +114,147 @@ STRING 800-FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\TM1637.X.production.o
-7EC cinit CODE >1778:C:\Users\dexte\AppData\Local\Temp\segg.s
-7EC cinit CODE >1781:C:\Users\dexte\AppData\Local\Temp\segg.s
-7EC cinit CODE >1823:C:\Users\dexte\AppData\Local\Temp\segg.s
-7ED cinit CODE >1824:C:\Users\dexte\AppData\Local\Temp\segg.s
-7EE cinit CODE >1825:C:\Users\dexte\AppData\Local\Temp\segg.s
-7EF cinit CODE >1826:C:\Users\dexte\AppData\Local\Temp\segg.s
-7F0 cinit CODE >1827:C:\Users\dexte\AppData\Local\Temp\segg.s
-7F1 cinit CODE >1828:C:\Users\dexte\AppData\Local\Temp\segg.s
-7F2 cinit CODE >1829:C:\Users\dexte\AppData\Local\Temp\segg.s
-7F3 cinit CODE >1830:C:\Users\dexte\AppData\Local\Temp\segg.s
-7F4 cinit CODE >1831:C:\Users\dexte\AppData\Local\Temp\segg.s
-7F5 cinit CODE >1832:C:\Users\dexte\AppData\Local\Temp\segg.s
-7F8 cinit CODE >1837:C:\Users\dexte\AppData\Local\Temp\segg.s
-7F9 cinit CODE >1841:C:\Users\dexte\AppData\Local\Temp\segg.s
-7FA cinit CODE >1842:C:\Users\dexte\AppData\Local\Temp\segg.s
-7FB cinit CODE >1843:C:\Users\dexte\AppData\Local\Temp\segg.s
-7FC cinit CODE >1844:C:\Users\dexte\AppData\Local\Temp\segg.s
-7FD cinit CODE >1850:C:\Users\dexte\AppData\Local\Temp\segg.s
-7FD cinit CODE >1852:C:\Users\dexte\AppData\Local\Temp\segg.s
-7FE cinit CODE >1853:C:\Users\dexte\AppData\Local\Temp\segg.s
-6BE text11 CODE >58:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
-6BE text11 CODE >61:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
-6C1 text11 CODE >63:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
-6C2 text11 CODE >65:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
-6C4 text11 CODE >66:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
-712 text10 CODE >55:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
-712 text10 CODE >60:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
-714 text10 CODE >61:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
-715 text10 CODE >66:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
-718 text10 CODE >67:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
-71A text10 CODE >72:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
-71D text10 CODE >73:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
-71F text10 CODE >78:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
-721 text10 CODE >79:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
-722 text10 CODE >80:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
-724 text10 CODE >86:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
-726 text10 CODE >87:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
-727 text10 CODE >94:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
-6B4 text9 CODE >68:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
-6B4 text9 CODE >71:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
-6B7 text9 CODE >72:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
-6E7 text8 CODE >50:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
-6E7 text8 CODE >53:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
-6EA text8 CODE >54:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
-6ED text8 CODE >55:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
-6F0 text8 CODE >56:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
-6C5 text7 CODE >126:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-6C6 text7 CODE >127:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-6CC text7 CODE >128:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-6FF text6 CODE >94:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-700 text6 CODE >95:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-705 text6 CODE >96:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-70B text6 CODE >97:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-70C text6 CODE >98:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-711 text6 CODE >100:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-6D5 text5 CODE >31:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-6D5 text5 CODE >32:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-6D7 text5 CODE >33:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-6D8 text5 CODE >35:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-6DA text5 CODE >36:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-6DB text5 CODE >38:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-6DC text5 CODE >39:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-6DD text5 CODE >40:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-6DE text4 CODE >42:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-6DE text4 CODE >43:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-6E0 text4 CODE >44:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-6E1 text4 CODE >46:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-6E3 text4 CODE >47:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-6E4 text4 CODE >49:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-6E5 text4 CODE >50:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-6E6 text4 CODE >51:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-6CD text3 CODE >27:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-6CD text3 CODE >28:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-6D4 text3 CODE >29:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-762 text2 CODE >53:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-763 text2 CODE >54:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-767 text2 CODE >56:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-769 text2 CODE >57:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-76A text2 CODE >58:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-76C text2 CODE >60:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-770 text2 CODE >61:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-772 text2 CODE >63:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-773 text2 CODE >66:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-774 text2 CODE >68:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-778 text2 CODE >69:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-782 text2 CODE >72:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-783 text2 CODE >73:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-784 text2 CODE >76:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-785 text2 CODE >78:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-787 text2 CODE >79:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-78A text2 CODE >81:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-78F text2 CODE >82:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-794 text2 CODE >83:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-796 text2 CODE >84:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-798 text2 CODE >87:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-79B text2 CODE >88:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-79D text2 CODE >89:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-7A0 text2 CODE >92:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-728 text1 CODE >102:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-729 text1 CODE >105:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-72C text1 CODE >106:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-730 text1 CODE >107:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-733 text1 CODE >110:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-736 text1 CODE >111:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-73C text1 CODE >114:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-73E text1 CODE >115:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-748 text1 CODE >116:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-752 text1 CODE >118:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-755 text1 CODE >121:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-758 text1 CODE >122:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-75E text1 CODE >123:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-761 text1 CODE >124:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
-7A1 maintext CODE >8:E:\Documents\GitHub\TM1637\TM1637.X\main.c
-7A1 maintext CODE >11:E:\Documents\GitHub\TM1637\TM1637.X\main.c
-7A4 maintext CODE >13:E:\Documents\GitHub\TM1637\TM1637.X\main.c
-7A6 maintext CODE >15:E:\Documents\GitHub\TM1637\TM1637.X\main.c
-7AF maintext CODE >16:E:\Documents\GitHub\TM1637\TM1637.X\main.c
-7B7 maintext CODE >18:E:\Documents\GitHub\TM1637\TM1637.X\main.c
-7BF maintext CODE >19:E:\Documents\GitHub\TM1637\TM1637.X\main.c
-7C7 maintext CODE >20:E:\Documents\GitHub\TM1637\TM1637.X\main.c
-7CF maintext CODE >21:E:\Documents\GitHub\TM1637\TM1637.X\main.c
-7D7 maintext CODE >24:E:\Documents\GitHub\TM1637\TM1637.X\main.c
-7DD maintext CODE >26:E:\Documents\GitHub\TM1637\TM1637.X\main.c
-7E6 maintext CODE >27:E:\Documents\GitHub\TM1637\TM1637.X\main.c
-7E9 maintext CODE >29:E:\Documents\GitHub\TM1637\TM1637.X\main.c
-7E9 maintext CODE >31:E:\Documents\GitHub\TM1637\TM1637.X\main.c
-6B8 inittext CODE >1812:C:\Users\dexte\AppData\Local\Temp\segg.s
-6B8 inittext CODE >1813:C:\Users\dexte\AppData\Local\Temp\segg.s
-6B9 inittext CODE >1814:C:\Users\dexte\AppData\Local\Temp\segg.s
-6B9 inittext CODE >1815:C:\Users\dexte\AppData\Local\Temp\segg.s
-6BA inittext CODE >1816:C:\Users\dexte\AppData\Local\Temp\segg.s
-6BB inittext CODE >1817:C:\Users\dexte\AppData\Local\Temp\segg.s
-6BC inittext CODE >1818:C:\Users\dexte\AppData\Local\Temp\segg.s
-6BD inittext CODE >1819:C:\Users\dexte\AppData\Local\Temp\segg.s
+7EC cinit CODE >1777:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+7EC cinit CODE >1780:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+7EC cinit CODE >1822:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+7ED cinit CODE >1823:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+7EE cinit CODE >1824:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+7EF cinit CODE >1825:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+7F0 cinit CODE >1826:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+7F1 cinit CODE >1827:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+7F2 cinit CODE >1828:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+7F3 cinit CODE >1829:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+7F4 cinit CODE >1830:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+7F5 cinit CODE >1831:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+7F8 cinit CODE >1836:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+7F9 cinit CODE >1840:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+7FA cinit CODE >1841:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+7FB cinit CODE >1842:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+7FC cinit CODE >1843:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+7FD cinit CODE >1849:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+7FD cinit CODE >1851:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+7FE cinit CODE >1852:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+687 text12 CODE >58:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
+687 text12 CODE >61:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
+68A text12 CODE >63:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
+68B text12 CODE >65:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
+68D text12 CODE >66:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
+6E6 text11 CODE >55:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
+6E6 text11 CODE >60:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
+6E8 text11 CODE >61:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
+6E9 text11 CODE >66:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
+6EC text11 CODE >67:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
+6EE text11 CODE >72:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
+6F1 text11 CODE >73:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
+6F3 text11 CODE >78:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
+6F5 text11 CODE >79:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
+6F6 text11 CODE >80:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
+6F8 text11 CODE >86:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
+6FA text11 CODE >87:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
+6FB text11 CODE >94:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/pin_manager.c
+67D text10 CODE >68:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
+67D text10 CODE >71:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
+680 text10 CODE >72:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
+6A8 text9 CODE >50:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
+6A8 text9 CODE >53:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
+6AB text9 CODE >54:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
+6AE text9 CODE >55:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
+6B1 text9 CODE >56:E:\Documents\GitHub\TM1637\TM1637.X\mcc_generated_files/mcc.c
+696 text8 CODE >31:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+696 text8 CODE >32:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+698 text8 CODE >33:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+699 text8 CODE >35:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+69B text8 CODE >36:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+69C text8 CODE >38:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+69D text8 CODE >39:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+69E text8 CODE >40:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+69F text7 CODE >42:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+69F text7 CODE >43:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+6A1 text7 CODE >44:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+6A2 text7 CODE >46:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+6A4 text7 CODE >47:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+6A5 text7 CODE >49:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+6A6 text7 CODE >50:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+6A7 text7 CODE >51:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+67C text6 CODE >27:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+67C text6 CODE >29:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+736 text5 CODE >53:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+737 text5 CODE >54:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+73B text5 CODE >56:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+73D text5 CODE >57:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+73E text5 CODE >58:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+740 text5 CODE >60:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+744 text5 CODE >61:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+746 text5 CODE >63:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+747 text5 CODE >66:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+748 text5 CODE >68:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+74C text5 CODE >69:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+756 text5 CODE >72:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+757 text5 CODE >73:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+758 text5 CODE >76:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+759 text5 CODE >78:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+75B text5 CODE >79:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+75E text5 CODE >81:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+763 text5 CODE >82:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+768 text5 CODE >83:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+76A text5 CODE >84:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+76C text5 CODE >87:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+76F text5 CODE >88:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+771 text5 CODE >89:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+774 text5 CODE >92:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+6FC text4 CODE >102:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+6FD text4 CODE >105:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+700 text4 CODE >106:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+704 text4 CODE >107:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+707 text4 CODE >110:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+70A text4 CODE >111:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+710 text4 CODE >114:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+712 text4 CODE >115:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+71C text4 CODE >116:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+726 text4 CODE >118:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+729 text4 CODE >121:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+72C text4 CODE >122:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+732 text4 CODE >123:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+735 text4 CODE >124:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+6C0 text3 CODE >126:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+6C0 text3 CODE >127:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+6C9 text3 CODE >128:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+6D2 text3 CODE >129:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+68E text2 CODE >131:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+68F text2 CODE >132:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+695 text2 CODE >133:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+6D3 text1 CODE >94:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+6D4 text1 CODE >95:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+6D9 text1 CODE >96:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+6DF text1 CODE >97:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+6E0 text1 CODE >98:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+6E5 text1 CODE >100:E:\Documents\GitHub\TM1637\TM1637.X\i2c_pp.c
+775 maintext CODE >8:E:\Documents\GitHub\TM1637\TM1637.X\main.c
+775 maintext CODE >11:E:\Documents\GitHub\TM1637\TM1637.X\main.c
+778 maintext CODE >13:E:\Documents\GitHub\TM1637\TM1637.X\main.c
+77A maintext CODE >15:E:\Documents\GitHub\TM1637\TM1637.X\main.c
+783 maintext CODE >17:E:\Documents\GitHub\TM1637\TM1637.X\main.c
+786 maintext CODE >19:E:\Documents\GitHub\TM1637\TM1637.X\main.c
+78E maintext CODE >20:E:\Documents\GitHub\TM1637\TM1637.X\main.c
+796 maintext CODE >21:E:\Documents\GitHub\TM1637\TM1637.X\main.c
+79E maintext CODE >22:E:\Documents\GitHub\TM1637\TM1637.X\main.c
+7A6 maintext CODE >25:E:\Documents\GitHub\TM1637\TM1637.X\main.c
+7AC maintext CODE >26:E:\Documents\GitHub\TM1637\TM1637.X\main.c
+7B5 maintext CODE >28:E:\Documents\GitHub\TM1637\TM1637.X\main.c
+7B7 maintext CODE >31:E:\Documents\GitHub\TM1637\TM1637.X\main.c
+7B8 maintext CODE >32:E:\Documents\GitHub\TM1637\TM1637.X\main.c
+7C5 maintext CODE >33:E:\Documents\GitHub\TM1637\TM1637.X\main.c
+7CF maintext CODE >35:E:\Documents\GitHub\TM1637\TM1637.X\main.c
+7D8 maintext CODE >36:E:\Documents\GitHub\TM1637\TM1637.X\main.c
+7E4 maintext CODE >37:E:\Documents\GitHub\TM1637\TM1637.X\main.c
+681 inittext CODE >1811:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+681 inittext CODE >1812:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+682 inittext CODE >1813:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+682 inittext CODE >1814:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+683 inittext CODE >1815:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+684 inittext CODE >1816:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+685 inittext CODE >1817:C:\Users\dexte\AppData\Local\Temp\s6qo.s
+686 inittext CODE >1818:C:\Users\dexte\AppData\Local\Temp\s6qo.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -263,25 +270,27 @@ $dist/default/production\TM1637.X.production.o
 ___latbits 1 0 ABS 0 - dist/default/production\TM1637.X.production.o
 __LdataBANK0 0 0 ABS 0 dataBANK0 -
 __Hspace_0 800 0 ABS 0 - -
-__Hspace_1 7D 0 ABS 0 - -
+__Hspace_1 7E 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 10010 0 ABS 0 - -
-_set_segments E50 0 CODE 0 text1 dist/default/production\TM1637.X.production.o
+_set_segments DF8 0 CODE 0 text4 dist/default/production\TM1637.X.production.o
 __HidataBANK0 0 0 ABS 0 idataBANK0 -
-__end_of_write_byte F42 0 CODE 0 text2 dist/default/production\TM1637.X.production.o
+__end_of_write_byte EEA 0 CODE 0 text5 dist/default/production\TM1637.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
-__end_of_WDT_Initialize D70 0 CODE 0 text9 dist/default/production\TM1637.X.production.o
+__end_of_WDT_Initialize D02 0 CODE 0 text10 dist/default/production\TM1637.X.production.o
+main@i 37 0 BANK0 1 cstackBANK0 dist/default/production\TM1637.X.production.o
+main@k 32 0 BANK0 1 cstackBANK0 dist/default/production\TM1637.X.production.o
 __Hstrings 0 0 ABS 0 strings -
 _LATA 10C 0 ABS 0 - dist/default/production\TM1637.X.production.o
 _LATB 10D 0 ABS 0 - dist/default/production\TM1637.X.production.o
 _WPUA 20C 0 ABS 0 - dist/default/production\TM1637.X.production.o
 _WPUB 20D 0 ABS 0 - dist/default/production\TM1637.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\dexte\AppData\Local\Temp\segg.o
-_main F42 0 CODE 0 maintext dist/default/production\TM1637.X.production.o
-_stop DBC 0 CODE 0 text4 dist/default/production\TM1637.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\dexte\AppData\Local\Temp\s6qo.o
+_main EEA 0 CODE 0 maintext dist/default/production\TM1637.X.production.o
+_stop D3E 0 CODE 0 text7 dist/default/production\TM1637.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\TM1637.X.production.o
-start 4 0 CODE 0 init C:\Users\dexte\AppData\Local\Temp\segg.o
+start 4 0 CODE 0 init C:\Users\dexte\AppData\Local\Temp\s6qo.o
 __size_of_main 0 0 ABS 0 - dist/default/production\TM1637.X.production.o
 __size_of_stop 0 0 ABS 0 - dist/default/production\TM1637.X.production.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
@@ -289,42 +298,44 @@ _OPTION_REGbits 95 0 ABS 0 - dist/default/production\TM1637.X.production.o
 __LidataBANK0 0 0 ABS 0 idataBANK0 -
 __Hpowerup 0 0 CODE 0 powerup -
 __size_of_set_segments 0 0 ABS 0 - dist/default/production\TM1637.X.production.o
-_encode_digit D8A 0 CODE 0 text7 dist/default/production\TM1637.X.production.o
+_encode_digit D1C 0 CODE 0 text2 dist/default/production\TM1637.X.production.o
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\TM1637.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\segg.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\segg.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\segg.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\segg.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\segg.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\segg.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\s6qo.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\s6qo.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\s6qo.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\s6qo.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\s6qo.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\s6qo.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 wtemp0 7E 0 ABS 0 - dist/default/production\TM1637.X.production.o
-set_segments@pos 77 0 COMMON 1 cstackCOMMON dist/default/production\TM1637.X.production.o
+set_segments@pos 76 0 COMMON 1 cstackCOMMON dist/default/production\TM1637.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
-_set_brigthness DFE 0 CODE 0 text6 dist/default/production\TM1637.X.production.o
-__end_of_set_segments EC4 0 CODE 0 text1 dist/default/production\TM1637.X.production.o
-write_byte@ack 73 0 COMMON 1 cstackCOMMON dist/default/production\TM1637.X.production.o
+_set_brigthness DA6 0 CODE 0 text1 dist/default/production\TM1637.X.production.o
+__end_of_set_segments E6C 0 CODE 0 text4 dist/default/production\TM1637.X.production.o
+write_byte@ack 72 0 COMMON 1 cstackCOMMON dist/default/production\TM1637.X.production.o
 _ANSELA 18C 0 ABS 0 - dist/default/production\TM1637.X.production.o
 _ANSELB 18D 0 ABS 0 - dist/default/production\TM1637.X.production.o
 _BORCON 116 0 ABS 0 - dist/default/production\TM1637.X.production.o
-set_segments@k 7A 0 COMMON 1 cstackCOMMON dist/default/production\TM1637.X.production.o
+set_segments@k 79 0 COMMON 1 cstackCOMMON dist/default/production\TM1637.X.production.o
 __size_of_encode_digit 0 0 ABS 0 - dist/default/production\TM1637.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 216F 0 ABS 0 - C:\Users\dexte\AppData\Local\Temp\segg.o
-___stacklo 201A 0 ABS 0 - C:\Users\dexte\AppData\Local\Temp\segg.o
-__end_of_encode_digit D9A 0 CODE 0 text7 dist/default/production\TM1637.X.production.o
-__end_of_set_brigthness E24 0 CODE 0 text6 dist/default/production\TM1637.X.production.o
+___stackhi 216F 0 ABS 0 - C:\Users\dexte\AppData\Local\Temp\s6qo.o
+___stacklo 201C 0 ABS 0 - C:\Users\dexte\AppData\Local\Temp\s6qo.o
+__end_of_encode_digit D2C 0 CODE 0 text2 dist/default/production\TM1637.X.production.o
+__end_of_set_brigthness DCC 0 CODE 0 text1 dist/default/production\TM1637.X.production.o
+__size_of_clear 0 0 ABS 0 - dist/default/production\TM1637.X.production.o
 __size_of_start 0 0 ABS 0 - dist/default/production\TM1637.X.production.o
-_PIN_MANAGER_Initialize E24 0 CODE 0 text10 dist/default/production\TM1637.X.production.o
+_PIN_MANAGER_Initialize DCC 0 CODE 0 text11 dist/default/production\TM1637.X.production.o
 start_initialization FD8 0 CODE 0 cinit dist/default/production\TM1637.X.production.o
 _OSCCON 99 0 ABS 0 - dist/default/production\TM1637.X.production.o
-_TRISBbits 8D 0 ABS 0 - dist/default/production\TM1637.X.production.o
+_TRISAbits 8C 0 ABS 0 - dist/default/production\TM1637.X.production.o
 __size_of_write_byte 0 0 ABS 0 - dist/default/production\TM1637.X.production.o
-__end_of_SYSTEM_Initialize DE2 0 CODE 0 text8 dist/default/production\TM1637.X.production.o
+clear@data 2E 0 BANK0 1 cstackBANK0 dist/default/production\TM1637.X.production.o
+__end_of_SYSTEM_Initialize D64 0 CODE 0 text9 dist/default/production\TM1637.X.production.o
 __pcstackBANK0 2E 0 BANK0 1 cstackBANK0 dist/default/production\TM1637.X.production.o
 _WDTCON 97 0 ABS 0 - dist/default/production\TM1637.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\dexte\AppData\Local\Temp\segg.o
+___int_sp 0 0 STACK 2 stack C:\Users\dexte\AppData\Local\Temp\s6qo.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -422,9 +433,9 @@ __Lsfr31 0 0 ABS 0 sfr31 -
 __Lstack 0 0 STACK 2 stack -
 _APFCON0 11D 0 ABS 0 - dist/default/production\TM1637.X.production.o
 _APFCON1 11E 0 ABS 0 - dist/default/production\TM1637.X.production.o
-init_ram D70 0 CODE 0 inittext dist/default/production\TM1637.X.production.o
+init_ram D02 0 CODE 0 inittext dist/default/production\TM1637.X.production.o
 __Linittext 0 0 ABS 0 inittext -
-_PORTBbits D 0 ABS 0 - dist/default/production\TM1637.X.production.o
+_PORTAbits C 0 ABS 0 - dist/default/production\TM1637.X.production.o
 __Habs1 0 0 ABS 0 abs1 -
 __Hcode 0 0 ABS 0 code -
 __Hinit 4 0 CODE 0 init -
@@ -456,22 +467,23 @@ __Ltext 0 0 ABS 0 text -
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 __size_of_WDT_Initialize 0 0 ABS 0 - dist/default/production\TM1637.X.production.o
-_m_brightness 7C 0 COMMON 1 bssCOMMON dist/default/production\TM1637.X.production.o
+_m_brightness 7D 0 COMMON 1 bssCOMMON dist/default/production\TM1637.X.production.o
 __S0 800 0 ABS 0 - -
-__S1 7D 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 set_brigthness@on 70 0 COMMON 1 cstackCOMMON dist/default/production\TM1637.X.production.o
-_SYSTEM_Initialize DCE 0 CODE 0 text8 dist/default/production\TM1637.X.production.o
+_SYSTEM_Initialize D50 0 CODE 0 text9 dist/default/production\TM1637.X.production.o
 set_brigthness@brightness 72 0 COMMON 1 cstackCOMMON dist/default/production\TM1637.X.production.o
 __Lintentry 4 0 CODE 0 intentry -
 encode_digit@digit 70 0 COMMON 1 cstackCOMMON dist/default/production\TM1637.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\dexte\AppData\Local\Temp\segg.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\dexte\AppData\Local\Temp\s6qo.o
 __pdataBANK0 20 0 BANK0 1 dataBANK0 dist/default/production\TM1637.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
-__ptext10 E24 0 CODE 0 text10 dist/default/production\TM1637.X.production.o
-__ptext11 D7C 0 CODE 0 text11 dist/default/production\TM1637.X.production.o
-__end_of_PIN_MANAGER_Initialize E50 0 CODE 0 text10 dist/default/production\TM1637.X.production.o
+__ptext10 CFA 0 CODE 0 text10 dist/default/production\TM1637.X.production.o
+__ptext11 DCC 0 CODE 0 text11 dist/default/production\TM1637.X.production.o
+__ptext12 D0E 0 CODE 0 text12 dist/default/production\TM1637.X.production.o
+__end_of_PIN_MANAGER_Initialize DF8 0 CODE 0 text11 dist/default/production\TM1637.X.production.o
 __Lbank10 0 0 BANK10 1 bank10 -
 __Lbank11 0 0 BANK11 1 bank11 -
 __Lbank12 0 0 BANK12 1 bank12 -
@@ -494,19 +506,17 @@ __Lbank28 0 0 BANK28 1 bank28 -
 __Lbank29 0 0 BANK29 1 bank29 -
 __Lbank30 0 0 BANK30 1 bank30 -
 __Lbank31 0 0 BANK31 1 bank31 -
-__pmaintext F42 0 CODE 0 maintext dist/default/production\TM1637.X.production.o
+__pmaintext EEA 0 CODE 0 maintext dist/default/production\TM1637.X.production.o
 __Lbigram 0 0 ABS 0 bigram -
-write_byte@b 72 0 COMMON 1 cstackCOMMON dist/default/production\TM1637.X.production.o
-write_byte@i 75 0 COMMON 1 cstackCOMMON dist/default/production\TM1637.X.production.o
+write_byte@b 71 0 COMMON 1 cstackCOMMON dist/default/production\TM1637.X.production.o
+write_byte@i 74 0 COMMON 1 cstackCOMMON dist/default/production\TM1637.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
 __Hinittext 0 0 ABS 0 inittext -
 _LATAbits 10C 0 ABS 0 - dist/default/production\TM1637.X.production.o
-_LATBbits 10D 0 ABS 0 - dist/default/production\TM1637.X.production.o
-main@F2502 2A 0 BANK0 1 dataBANK0 dist/default/production\TM1637.X.production.o
-main@data 32 0 BANK0 1 cstackBANK0 dist/default/production\TM1637.X.production.o
-main@blank 2E 0 BANK0 1 cstackBANK0 dist/default/production\TM1637.X.production.o
-set_segments@length 76 0 COMMON 1 cstackCOMMON dist/default/production\TM1637.X.production.o
+main@F2503 2A 0 BANK0 1 dataBANK0 dist/default/production\TM1637.X.production.o
+main@data 33 0 BANK0 1 cstackBANK0 dist/default/production\TM1637.X.production.o
+set_segments@length 75 0 COMMON 1 cstackCOMMON dist/default/production\TM1637.X.production.o
 _segdata 20 0 BANK0 1 dataBANK0 dist/default/production\TM1637.X.production.o
 _OSCTUNE 98 0 ABS 0 - dist/default/production\TM1637.X.production.o
 __Lspace_0 0 0 ABS 0 - -
@@ -514,8 +524,8 @@ __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
 __Lspace_4 0 0 ABS 0 - -
-__pbssCOMMON 7C 0 COMMON 1 bssCOMMON dist/default/production\TM1637.X.production.o
-set_segments@segments 79 0 COMMON 1 cstackCOMMON dist/default/production\TM1637.X.production.o
+__pbssCOMMON 7D 0 COMMON 1 bssCOMMON dist/default/production\TM1637.X.production.o
+set_segments@segments 78 0 COMMON 1 cstackCOMMON dist/default/production\TM1637.X.production.o
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __Lend_init 4 0 CODE 0 end_init -
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
@@ -525,44 +535,46 @@ __Hintentry 4 0 CODE 0 intentry -
 __Lstrings 0 0 ABS 0 strings -
 __Hreset_vec 4 0 CODE 0 reset_vec -
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
-__ptext1 E50 0 CODE 0 text1 dist/default/production\TM1637.X.production.o
-__ptext2 EC4 0 CODE 0 text2 dist/default/production\TM1637.X.production.o
-__ptext3 D9A 0 CODE 0 text3 dist/default/production\TM1637.X.production.o
-__ptext4 DBC 0 CODE 0 text4 dist/default/production\TM1637.X.production.o
-__ptext5 DAA 0 CODE 0 text5 dist/default/production\TM1637.X.production.o
-__ptext6 DFE 0 CODE 0 text6 dist/default/production\TM1637.X.production.o
-__ptext7 D8A 0 CODE 0 text7 dist/default/production\TM1637.X.production.o
-__ptext8 DCE 0 CODE 0 text8 dist/default/production\TM1637.X.production.o
-__ptext9 D68 0 CODE 0 text9 dist/default/production\TM1637.X.production.o
+__ptext1 DA6 0 CODE 0 text1 dist/default/production\TM1637.X.production.o
+__ptext2 D1C 0 CODE 0 text2 dist/default/production\TM1637.X.production.o
+__ptext3 D80 0 CODE 0 text3 dist/default/production\TM1637.X.production.o
+__ptext4 DF8 0 CODE 0 text4 dist/default/production\TM1637.X.production.o
+__ptext5 E6C 0 CODE 0 text5 dist/default/production\TM1637.X.production.o
+__ptext6 CF8 0 CODE 0 text6 dist/default/production\TM1637.X.production.o
+__ptext7 D3E 0 CODE 0 text7 dist/default/production\TM1637.X.production.o
+__ptext8 D2C 0 CODE 0 text8 dist/default/production\TM1637.X.production.o
+__ptext9 D50 0 CODE 0 text9 dist/default/production\TM1637.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
-write_byte@data 74 0 COMMON 1 cstackCOMMON dist/default/production\TM1637.X.production.o
+write_byte@data 73 0 COMMON 1 cstackCOMMON dist/default/production\TM1637.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec -
 __end_of__initialization FFA 0 CODE 0 cinit dist/default/production\TM1637.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
-__pidataBANK0 DE2 0 CODE 0 idataBANK0 dist/default/production\TM1637.X.production.o
+__pidataBANK0 D64 0 CODE 0 idataBANK0 dist/default/production\TM1637.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext -
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\TM1637.X.production.o
-_write_byte EC4 0 CODE 0 text2 dist/default/production\TM1637.X.production.o
+_write_byte E6C 0 CODE 0 text5 dist/default/production\TM1637.X.production.o
 __Hend_init 8 0 CODE 0 end_init -
 __end_of_main FD8 0 CODE 0 maintext dist/default/production\TM1637.X.production.o
-__end_of_stop DCE 0 CODE 0 text4 dist/default/production\TM1637.X.production.o
+__end_of_stop D50 0 CODE 0 text7 dist/default/production\TM1637.X.production.o
+__end_of_clear DA6 0 CODE 0 text3 dist/default/production\TM1637.X.production.o
 _TRISA 8C 0 ABS 0 - dist/default/production\TM1637.X.production.o
 _TRISB 8D 0 ABS 0 - dist/default/production\TM1637.X.production.o
-__end_of_start DBC 0 CODE 0 text5 dist/default/production\TM1637.X.production.o
-__end_of_bit_delay DAA 0 CODE 0 text3 dist/default/production\TM1637.X.production.o
+__end_of_start D3E 0 CODE 0 text8 dist/default/production\TM1637.X.production.o
+__end_of_bit_delay CFA 0 CODE 0 text6 dist/default/production\TM1637.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
-_start DAA 0 CODE 0 text5 dist/default/production\TM1637.X.production.o
+_clear D80 0 CODE 0 text3 dist/default/production\TM1637.X.production.o
+_start D2C 0 CODE 0 text8 dist/default/production\TM1637.X.production.o
 __size_of_bit_delay 0 0 ABS 0 - dist/default/production\TM1637.X.production.o
 __size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\TM1637.X.production.o
-_WDT_Initialize D68 0 CODE 0 text9 dist/default/production\TM1637.X.production.o
+_WDT_Initialize CFA 0 CODE 0 text10 dist/default/production\TM1637.X.production.o
 __HdataBANK0 0 0 ABS 0 dataBANK0 -
-__end_of_OSCILLATOR_Initialize D8A 0 CODE 0 text11 dist/default/production\TM1637.X.production.o
+__end_of_OSCILLATOR_Initialize D1C 0 CODE 0 text12 dist/default/production\TM1637.X.production.o
 __initialization FD8 0 CODE 0 cinit dist/default/production\TM1637.X.production.o
-__pbssBANK0 36 0 BANK0 1 bssBANK0 dist/default/production\TM1637.X.production.o
-_bit_delay D9A 0 CODE 0 text3 dist/default/production\TM1637.X.production.o
-_OSCILLATOR_Initialize D7C 0 CODE 0 text11 dist/default/production\TM1637.X.production.o
+__pbssBANK0 38 0 BANK0 1 bssBANK0 dist/default/production\TM1637.X.production.o
+_bit_delay CF8 0 CODE 0 text6 dist/default/production\TM1637.X.production.o
+_OSCILLATOR_Initialize D0E 0 CODE 0 text12 dist/default/production\TM1637.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -589,23 +601,24 @@ _OSCILLATOR_Initialize D7C 0 CODE 0 text11 dist/default/production\TM1637.X.prod
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 7EC FD8 14 2
-text1 0 728 E50 3A 2
-text2 0 762 EC4 3F 2
-text3 0 6CD D9A 8 2
-text4 0 6DE DBC 9 2
-text5 0 6D5 DAA 9 2
-text6 0 6FF DFE 13 2
-text7 0 6C5 D8A 8 2
-text8 0 6E7 DCE A 2
-text9 0 6B4 D68 4 2
-text10 0 712 E24 16 2
-text11 0 6BE D7C 7 2
-maintext 0 7A1 F42 4B 2
-cstackCOMMON 1 70 70 D 1
-inittext 0 6B8 D70 6 2
+text1 0 6D3 DA6 13 2
+text2 0 68E D1C 8 2
+text3 0 6C0 D80 13 2
+text4 0 6FC DF8 3A 2
+text5 0 736 E6C 3F 2
+text6 0 67C CF8 1 2
+text7 0 69F D3E 9 2
+text8 0 696 D2C 9 2
+text9 0 6A8 D50 A 2
+text10 0 67D CFA 4 2
+text11 0 6E6 DCC 16 2
+text12 0 687 D0E 7 2
+maintext 0 775 EEA 77 2
+cstackCOMMON 1 70 70 E 1
+inittext 0 681 D02 6 2
 reset_vec 0 0 0 4 2
-idataBANK0 0 6F1 DE2 E 2
-dataBANK0 1 20 20 1A 1
+idataBANK0 0 6B2 D64 E 2
+dataBANK0 1 20 20 1C 1
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

@@ -18,6 +18,7 @@ void stop();
 void set_brigthness(uint8_t brightness, uint8_t on);
 uint8_t write_byte(uint8_t b);
 void set_segments(const uint8_t segments[], uint8_t length, uint8_t pos);
+void clear();
 uint8_t encode_digit(uint8_t digit);
 
 

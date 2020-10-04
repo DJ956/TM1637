@@ -1,41 +1,37 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F2428 `(v ~T0 @X0 1 tf1`ul ]
-"92 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\pic.h
-[v __delay `JF2428 ~T0 @X0 0 e ]
-[p i __delay ]
-"1220 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1220:     struct {
-[s S73 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S73 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
-"1219
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1219: typedef union {
-[u S72 `S73 1 ]
-[n S72 . . ]
-"1231
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1231: extern volatile TRISBbits_t TRISBbits __attribute__((address(0x08D)));
-[v _TRISBbits `VS72 ~T0 @X0 0 e@141 ]
-"2102
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2102:     struct {
-[s S112 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S112 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
-"2101
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2101: typedef union {
-[u S111 `S112 1 ]
-[n S111 . . ]
-"2113
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2113: extern volatile LATBbits_t LATBbits __attribute__((address(0x10D)));
-[v _LATBbits `VS111 ~T0 @X0 0 e@269 ]
-"497
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 497:     struct {
-[s S36 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S36 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
-"496
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 496: typedef union {
-[u S35 `S36 1 ]
-[n S35 . . ]
-"508
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 508: extern volatile PORTBbits_t PORTBbits __attribute__((address(0x00D)));
-[v _PORTBbits `VS35 ~T0 @X0 0 e@13 ]
+"1158 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1158:     struct {
+[s S71 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S71 . TRISA0 TRISA1 TRISA2 TRISA3 TRISA4 TRISA5 TRISA6 TRISA7 ]
+"1157
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1157: typedef union {
+[u S70 `S71 1 ]
+[n S70 . . ]
+"1169
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1169: extern volatile TRISAbits_t TRISAbits __attribute__((address(0x08C)));
+[v _TRISAbits `VS70 ~T0 @X0 0 e@140 ]
+"2045
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2045:     struct {
+[s S110 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S110 . LATA0 LATA1 LATA2 LATA3 LATA4 . LATA6 LATA7 ]
+"2044
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2044: typedef union {
+[u S109 `S110 1 ]
+[n S109 . . ]
+"2056
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2056: extern volatile LATAbits_t LATAbits __attribute__((address(0x10C)));
+[v _LATAbits `VS109 ~T0 @X0 0 e@268 ]
+"435
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 435:     struct {
+[s S34 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S34 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 RA7 ]
+"434
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 434: typedef union {
+[u S33 `S34 1 ]
+[n S33 . . ]
+"446
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 446: extern volatile PORTAbits_t PORTAbits __attribute__((address(0x00C)));
+[v _PORTAbits `VS33 ~T0 @X0 0 e@12 ]
 "54 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -536,9 +532,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [e :U _bit_delay ]
 [f ]
-"28
-[; ;i2c_pp.c: 28:     _delay((unsigned long)((10)*(16000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
 "29
 [; ;i2c_pp.c: 29: }
 [e :UE 354 ]
@@ -550,45 +543,45 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _start ]
 [f ]
 "32
-[; ;i2c_pp.c: 32:     do { TRISBbits.TRISB2 = 0; } while(0);
+[; ;i2c_pp.c: 32:     do { TRISAbits.TRISA3 = 0; } while(0);
 [e :U 358 ]
 {
-[e = . . _TRISBbits 0 2 -> -> 0 `i `uc ]
+[e = . . _TRISAbits 0 3 -> -> 0 `i `uc ]
 }
 [e :U 357 ]
 "33
-[; ;i2c_pp.c: 33:     do { TRISBbits.TRISB5 = 0; } while(0);
+[; ;i2c_pp.c: 33:     do { TRISAbits.TRISA0 = 0; } while(0);
 [e :U 361 ]
 {
-[e = . . _TRISBbits 0 5 -> -> 0 `i `uc ]
+[e = . . _TRISAbits 0 0 -> -> 0 `i `uc ]
 }
 [e :U 360 ]
 "35
-[; ;i2c_pp.c: 35:     do { LATBbits.LATB2 = 1; } while(0);
+[; ;i2c_pp.c: 35:     do { LATAbits.LATA3 = 1; } while(0);
 [e :U 364 ]
 {
-[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
+[e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
 }
 [e :U 363 ]
 "36
-[; ;i2c_pp.c: 36:     do { LATBbits.LATB5 = 1; } while(0);
+[; ;i2c_pp.c: 36:     do { LATAbits.LATA0 = 1; } while(0);
 [e :U 367 ]
 {
-[e = . . _LATBbits 0 5 -> -> 1 `i `uc ]
+[e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
 }
 [e :U 366 ]
 "38
-[; ;i2c_pp.c: 38:     do { LATBbits.LATB2 = 0; } while(0);
+[; ;i2c_pp.c: 38:     do { LATAbits.LATA3 = 0; } while(0);
 [e :U 370 ]
 {
-[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+[e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
 }
 [e :U 369 ]
 "39
-[; ;i2c_pp.c: 39:     do { LATBbits.LATB5 = 0; } while(0);
+[; ;i2c_pp.c: 39:     do { LATAbits.LATA0 = 0; } while(0);
 [e :U 373 ]
 {
-[e = . . _LATBbits 0 5 -> -> 0 `i `uc ]
+[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
 }
 [e :U 372 ]
 "40
@@ -602,45 +595,45 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _stop ]
 [f ]
 "43
-[; ;i2c_pp.c: 43:     do { TRISBbits.TRISB2 = 0; } while(0);
+[; ;i2c_pp.c: 43:     do { TRISAbits.TRISA3 = 0; } while(0);
 [e :U 377 ]
 {
-[e = . . _TRISBbits 0 2 -> -> 0 `i `uc ]
+[e = . . _TRISAbits 0 3 -> -> 0 `i `uc ]
 }
 [e :U 376 ]
 "44
-[; ;i2c_pp.c: 44:     do { TRISBbits.TRISB5 = 0; } while(0);
+[; ;i2c_pp.c: 44:     do { TRISAbits.TRISA0 = 0; } while(0);
 [e :U 380 ]
 {
-[e = . . _TRISBbits 0 5 -> -> 0 `i `uc ]
+[e = . . _TRISAbits 0 0 -> -> 0 `i `uc ]
 }
 [e :U 379 ]
 "46
-[; ;i2c_pp.c: 46:     do { LATBbits.LATB5 = 0; } while(0);
+[; ;i2c_pp.c: 46:     do { LATAbits.LATA0 = 0; } while(0);
 [e :U 383 ]
 {
-[e = . . _LATBbits 0 5 -> -> 0 `i `uc ]
+[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
 }
 [e :U 382 ]
 "47
-[; ;i2c_pp.c: 47:     do { LATBbits.LATB2 = 0; } while(0);
+[; ;i2c_pp.c: 47:     do { LATAbits.LATA3 = 0; } while(0);
 [e :U 386 ]
 {
-[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+[e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
 }
 [e :U 385 ]
 "49
-[; ;i2c_pp.c: 49:     do { LATBbits.LATB5 = 1; } while(0);
+[; ;i2c_pp.c: 49:     do { LATAbits.LATA0 = 1; } while(0);
 [e :U 389 ]
 {
-[e = . . _LATBbits 0 5 -> -> 1 `i `uc ]
+[e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
 }
 [e :U 388 ]
 "50
-[; ;i2c_pp.c: 50:     do { LATBbits.LATB2 = 1; } while(0);
+[; ;i2c_pp.c: 50:     do { LATAbits.LATA3 = 1; } while(0);
 [e :U 392 ]
 {
-[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
+[e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
 }
 [e :U 391 ]
 "51
@@ -659,10 +652,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _data `uc ~T0 @X0 1 a ]
 [e = _data _b ]
 "56
-[; ;i2c_pp.c: 56:     do { TRISBbits.TRISB5 = 0; } while(0);
+[; ;i2c_pp.c: 56:     do { TRISAbits.TRISA0 = 0; } while(0);
 [e :U 396 ]
 {
-[e = . . _TRISBbits 0 5 -> -> 0 `i `uc ]
+[e = . . _TRISAbits 0 0 -> -> 0 `i `uc ]
 }
 [e :U 395 ]
 "57
@@ -675,10 +668,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 397 ]
 {
 "58
-[; ;i2c_pp.c: 58:         do { LATBbits.LATB5 = 0; } while(0);
+[; ;i2c_pp.c: 58:         do { LATAbits.LATA0 = 0; } while(0);
 [e :U 402 ]
 {
-[e = . . _LATBbits 0 5 -> -> 0 `i `uc ]
+[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
 }
 [e :U 401 ]
 "60
@@ -686,10 +679,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! != & -> _data `i -> 1 `i -> 0 `i 403  ]
 {
 "61
-[; ;i2c_pp.c: 61:             do { LATBbits.LATB2 = 1; } while(0);
+[; ;i2c_pp.c: 61:             do { LATAbits.LATA3 = 1; } while(0);
 [e :U 406 ]
 {
-[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
+[e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
 }
 [e :U 405 ]
 "62
@@ -699,10 +692,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 403 ]
 {
 "63
-[; ;i2c_pp.c: 63:             do { LATBbits.LATB2 = 0; } while(0);
+[; ;i2c_pp.c: 63:             do { LATAbits.LATA3 = 0; } while(0);
 [e :U 410 ]
 {
-[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+[e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
 }
 [e :U 409 ]
 "64
@@ -710,10 +703,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e :U 407 ]
 "66
-[; ;i2c_pp.c: 66:         do { LATBbits.LATB5 = 1; } while(0);
+[; ;i2c_pp.c: 66:         do { LATAbits.LATA0 = 1; } while(0);
 [e :U 413 ]
 {
-[e = . . _LATBbits 0 5 -> -> 1 `i `uc ]
+[e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
 }
 [e :U 412 ]
 "68
@@ -727,56 +720,56 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 398 ]
 }
 "72
-[; ;i2c_pp.c: 72:     do { LATBbits.LATB5 = 0; } while(0);
+[; ;i2c_pp.c: 72:     do { LATAbits.LATA0 = 0; } while(0);
 [e :U 416 ]
 {
-[e = . . _LATBbits 0 5 -> -> 0 `i `uc ]
+[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
 }
 [e :U 415 ]
 "73
-[; ;i2c_pp.c: 73:     do { LATBbits.LATB2 = 1; } while(0);
+[; ;i2c_pp.c: 73:     do { LATAbits.LATA3 = 1; } while(0);
 [e :U 419 ]
 {
-[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
+[e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
 }
 [e :U 418 ]
 "76
-[; ;i2c_pp.c: 76:     do { LATBbits.LATB5 = 1; } while(0);
+[; ;i2c_pp.c: 76:     do { LATAbits.LATA0 = 1; } while(0);
 [e :U 422 ]
 {
-[e = . . _LATBbits 0 5 -> -> 1 `i `uc ]
+[e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
 }
 [e :U 421 ]
 "78
-[; ;i2c_pp.c: 78:     do { TRISBbits.TRISB2 = 1; } while(0);
+[; ;i2c_pp.c: 78:     do { TRISAbits.TRISA3 = 1; } while(0);
 [e :U 425 ]
 {
-[e = . . _TRISBbits 0 2 -> -> 1 `i `uc ]
+[e = . . _TRISAbits 0 3 -> -> 1 `i `uc ]
 }
 [e :U 424 ]
 "79
 [; ;i2c_pp.c: 79:     bit_delay();
 [e ( _bit_delay ..  ]
 "81
-[; ;i2c_pp.c: 81:     uint8_t ack = PORTBbits.RB2;
+[; ;i2c_pp.c: 81:     uint8_t ack = PORTAbits.RA3;
 [v _ack `uc ~T0 @X0 1 a ]
-[e = _ack . . _PORTBbits 0 2 ]
+[e = _ack . . _PORTAbits 0 3 ]
 "82
 [; ;i2c_pp.c: 82:     if(ack == 0){
 [e $ ! == -> _ack `i -> 0 `i 426  ]
 {
 "83
-[; ;i2c_pp.c: 83:         do { TRISBbits.TRISB2 = 0; } while(0);
+[; ;i2c_pp.c: 83:         do { TRISAbits.TRISA3 = 0; } while(0);
 [e :U 429 ]
 {
-[e = . . _TRISBbits 0 2 -> -> 0 `i `uc ]
+[e = . . _TRISAbits 0 3 -> -> 0 `i `uc ]
 }
 [e :U 428 ]
 "84
-[; ;i2c_pp.c: 84:         do { LATBbits.LATB2 = 0; } while(0);
+[; ;i2c_pp.c: 84:         do { LATAbits.LATA3 = 0; } while(0);
 [e :U 432 ]
 {
-[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+[e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
 }
 [e :U 431 ]
 "85
@@ -787,10 +780,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;i2c_pp.c: 87:     bit_delay();
 [e ( _bit_delay ..  ]
 "88
-[; ;i2c_pp.c: 88:     do { TRISBbits.TRISB2 = 0; } while(0);
+[; ;i2c_pp.c: 88:     do { TRISAbits.TRISA3 = 0; } while(0);
 [e :U 435 ]
 {
-[e = . . _TRISBbits 0 2 -> -> 0 `i `uc ]
+[e = . . _TRISAbits 0 3 -> -> 0 `i `uc ]
 }
 [e :U 434 ]
 "89
@@ -896,17 +889,43 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 439 ]
 }
 "126
-[; ;i2c_pp.c: 126: uint8_t encode_digit(uint8_t digit){
+[; ;i2c_pp.c: 126: void clear(){
+[v _clear `(v ~T0 @X0 1 ef ]
+{
+[e :U _clear ]
+[f ]
+[v F2521 `uc ~T0 @X0 -> 4 `i s ]
+[i F2521
+:U ..
+"127
+[; ;i2c_pp.c: 127:     uint8_t data[] = { 0, 0, 0, 0 };
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+]
+[v _data `uc ~T0 @X0 -> 4 `i a ]
+[e = _data F2521 ]
+"128
+[; ;i2c_pp.c: 128:  set_segments(data, 4, 0);
+[e ( _set_segments (3 , , -> &U _data `*Cuc -> -> 4 `i `uc -> -> 0 `i `uc ]
+"129
+[; ;i2c_pp.c: 129: }
+[e :UE 444 ]
+}
+"131
+[; ;i2c_pp.c: 131: uint8_t encode_digit(uint8_t digit){
 [v _encode_digit `(uc ~T0 @X0 1 ef1`uc ]
 {
 [e :U _encode_digit ]
 [v _digit `uc ~T0 @X0 1 r1 ]
 [f ]
-"127
-[; ;i2c_pp.c: 127:     return segdata[digit & 0x0f];
+"132
+[; ;i2c_pp.c: 132:     return segdata[digit & 0x0f];
 [e ) *U + &U _segdata * -> -> & -> _digit `i -> 15 `i `ui `ux -> -> # *U &U _segdata `ui `ux ]
-[e $UE 444  ]
-"128
-[; ;i2c_pp.c: 128: }
-[e :UE 444 ]
+[e $UE 445  ]
+"133
+[; ;i2c_pp.c: 133: }
+[e :UE 445 ]
 }

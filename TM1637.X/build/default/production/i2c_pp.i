@@ -4332,6 +4332,7 @@ void stop();
 void set_brigthness(uint8_t brightness, uint8_t on);
 uint8_t write_byte(uint8_t b);
 void set_segments(const uint8_t segments[], uint8_t length, uint8_t pos);
+void clear();
 uint8_t encode_digit(uint8_t digit);
 # 2 "i2c_pp.c" 2
 
@@ -4342,9 +4343,9 @@ uint8_t encode_digit(uint8_t digit);
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 126 "./mcc_generated_files/pin_manager.h"
+# 120 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 138 "./mcc_generated_files/pin_manager.h"
+# 132 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -4415,67 +4416,67 @@ uint8_t segdata[] = {
 };
 
 void bit_delay(void){
-    _delay((unsigned long)((10)*(16000000/4000.0)));
+
 }
 
 void start(void){
-    do { TRISBbits.TRISB2 = 0; } while(0);
-    do { TRISBbits.TRISB5 = 0; } while(0);
+    do { TRISAbits.TRISA3 = 0; } while(0);
+    do { TRISAbits.TRISA0 = 0; } while(0);
 
-    do { LATBbits.LATB2 = 1; } while(0);
-    do { LATBbits.LATB5 = 1; } while(0);
+    do { LATAbits.LATA3 = 1; } while(0);
+    do { LATAbits.LATA0 = 1; } while(0);
 
-    do { LATBbits.LATB2 = 0; } while(0);
-    do { LATBbits.LATB5 = 0; } while(0);
+    do { LATAbits.LATA3 = 0; } while(0);
+    do { LATAbits.LATA0 = 0; } while(0);
 }
 
 void stop(void){
-    do { TRISBbits.TRISB2 = 0; } while(0);
-    do { TRISBbits.TRISB5 = 0; } while(0);
+    do { TRISAbits.TRISA3 = 0; } while(0);
+    do { TRISAbits.TRISA0 = 0; } while(0);
 
-    do { LATBbits.LATB5 = 0; } while(0);
-    do { LATBbits.LATB2 = 0; } while(0);
+    do { LATAbits.LATA0 = 0; } while(0);
+    do { LATAbits.LATA3 = 0; } while(0);
 
-    do { LATBbits.LATB5 = 1; } while(0);
-    do { LATBbits.LATB2 = 1; } while(0);
+    do { LATAbits.LATA0 = 1; } while(0);
+    do { LATAbits.LATA3 = 1; } while(0);
 }
 
 uint8_t write_byte(uint8_t b){
     uint8_t data = b;
 
-    do { TRISBbits.TRISB5 = 0; } while(0);
+    do { TRISAbits.TRISA0 = 0; } while(0);
     for(uint8_t i = 0; i < 8; i++){
-        do { LATBbits.LATB5 = 0; } while(0);
+        do { LATAbits.LATA0 = 0; } while(0);
 
         if(data & 0x01){
-            do { LATBbits.LATB2 = 1; } while(0);
+            do { LATAbits.LATA3 = 1; } while(0);
         }else{
-            do { LATBbits.LATB2 = 0; } while(0);
+            do { LATAbits.LATA3 = 0; } while(0);
         }
 
-        do { LATBbits.LATB5 = 1; } while(0);
+        do { LATAbits.LATA0 = 1; } while(0);
 
         data = data >> 1;
     }
 
 
-    do { LATBbits.LATB5 = 0; } while(0);
-    do { LATBbits.LATB2 = 1; } while(0);
+    do { LATAbits.LATA0 = 0; } while(0);
+    do { LATAbits.LATA3 = 1; } while(0);
 
 
-    do { LATBbits.LATB5 = 1; } while(0);
+    do { LATAbits.LATA0 = 1; } while(0);
 
-    do { TRISBbits.TRISB2 = 1; } while(0);
+    do { TRISAbits.TRISA3 = 1; } while(0);
     bit_delay();
 
-    uint8_t ack = PORTBbits.RB2;
+    uint8_t ack = PORTAbits.RA3;
     if(ack == 0){
-        do { TRISBbits.TRISB2 = 0; } while(0);
-        do { LATBbits.LATB2 = 0; } while(0);
+        do { TRISAbits.TRISA3 = 0; } while(0);
+        do { LATAbits.LATA3 = 0; } while(0);
     }
 
     bit_delay();
-    do { TRISBbits.TRISB2 = 0; } while(0);
+    do { TRISAbits.TRISA3 = 0; } while(0);
     bit_delay();
 
     return ack;
@@ -4511,6 +4512,11 @@ void set_segments(const uint8_t segments[], uint8_t length, uint8_t pos){
     start();
     write_byte(0x80 + (m_brightness & 0x0f));
     stop();
+}
+
+void clear(){
+    uint8_t data[] = { 0, 0, 0, 0 };
+ set_segments(data, 4, 0);
 }
 
 uint8_t encode_digit(uint8_t digit){
