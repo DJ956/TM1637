@@ -4,13 +4,13 @@
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
             <name>TM1637</name>
-            <creation-uuid>caec1140-1f34-4108-a26f-035663d37131</creation-uuid>
+            <creation-uuid>8271d2fc-0695-44a9-8f44-46fddf6f70ed</creation-uuid>
             <make-project-type>0</make-project-type>
             <c-extensions>c</c-extensions>
             <cpp-extensions/>
             <header-extensions>h</header-extensions>
             <asminc-extensions/>
-            <sourceEncoding>ISO-8859-1</sourceEncoding>
+            <sourceEncoding>UTF-8</sourceEncoding>
             <make-dep-projects/>
             <sourceRootList/>
             <confList>

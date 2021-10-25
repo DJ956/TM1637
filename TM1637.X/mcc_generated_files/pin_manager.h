@@ -13,12 +13,12 @@
   @Description
     This header file provides APIs for driver for .
     Generation Information :
-        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.6
+        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.7
         Device            :  PIC16F1827
         Driver Version    :  2.11
     The generated drivers are tested against the following:
-        Compiler          :  XC8 2.30 and above
-        MPLAB 	          :  MPLAB X 5.40	
+        Compiler          :  XC8 2.31 and above
+        MPLAB 	          :  MPLAB X 5.45	
 */
 
 /*
@@ -64,48 +64,6 @@
 
 #define PULL_UP_ENABLED      1
 #define PULL_UP_DISABLED     0
-
-// get/set CLK aliases
-#define CLK_TRIS                 TRISAbits.TRISA0
-#define CLK_LAT                  LATAbits.LATA0
-#define CLK_PORT                 PORTAbits.RA0
-#define CLK_ANS                  ANSELAbits.ANSA0
-#define CLK_SetHigh()            do { LATAbits.LATA0 = 1; } while(0)
-#define CLK_SetLow()             do { LATAbits.LATA0 = 0; } while(0)
-#define CLK_Toggle()             do { LATAbits.LATA0 = ~LATAbits.LATA0; } while(0)
-#define CLK_GetValue()           PORTAbits.RA0
-#define CLK_SetDigitalInput()    do { TRISAbits.TRISA0 = 1; } while(0)
-#define CLK_SetDigitalOutput()   do { TRISAbits.TRISA0 = 0; } while(0)
-#define CLK_SetAnalogMode()      do { ANSELAbits.ANSA0 = 1; } while(0)
-#define CLK_SetDigitalMode()     do { ANSELAbits.ANSA0 = 0; } while(0)
-
-// get/set IO_RA2 aliases
-#define IO_RA2_TRIS                 TRISAbits.TRISA2
-#define IO_RA2_LAT                  LATAbits.LATA2
-#define IO_RA2_PORT                 PORTAbits.RA2
-#define IO_RA2_ANS                  ANSELAbits.ANSA2
-#define IO_RA2_SetHigh()            do { LATAbits.LATA2 = 1; } while(0)
-#define IO_RA2_SetLow()             do { LATAbits.LATA2 = 0; } while(0)
-#define IO_RA2_Toggle()             do { LATAbits.LATA2 = ~LATAbits.LATA2; } while(0)
-#define IO_RA2_GetValue()           PORTAbits.RA2
-#define IO_RA2_SetDigitalInput()    do { TRISAbits.TRISA2 = 1; } while(0)
-#define IO_RA2_SetDigitalOutput()   do { TRISAbits.TRISA2 = 0; } while(0)
-#define IO_RA2_SetAnalogMode()      do { ANSELAbits.ANSA2 = 1; } while(0)
-#define IO_RA2_SetDigitalMode()     do { ANSELAbits.ANSA2 = 0; } while(0)
-
-// get/set DIO aliases
-#define DIO_TRIS                 TRISAbits.TRISA3
-#define DIO_LAT                  LATAbits.LATA3
-#define DIO_PORT                 PORTAbits.RA3
-#define DIO_ANS                  ANSELAbits.ANSA3
-#define DIO_SetHigh()            do { LATAbits.LATA3 = 1; } while(0)
-#define DIO_SetLow()             do { LATAbits.LATA3 = 0; } while(0)
-#define DIO_Toggle()             do { LATAbits.LATA3 = ~LATAbits.LATA3; } while(0)
-#define DIO_GetValue()           PORTAbits.RA3
-#define DIO_SetDigitalInput()    do { TRISAbits.TRISA3 = 1; } while(0)
-#define DIO_SetDigitalOutput()   do { TRISAbits.TRISA3 = 0; } while(0)
-#define DIO_SetAnalogMode()      do { ANSELAbits.ANSA3 = 1; } while(0)
-#define DIO_SetDigitalMode()     do { ANSELAbits.ANSA3 = 0; } while(0)
 
 /**
    @Param

@@ -13,12 +13,12 @@
   @Description:
     This header file provides implementations for driver APIs for all modules selected in the GUI.
     Generation Information :
-        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.6
+        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.7
         Device            :  PIC16F1827
         Driver Version    :  2.00
     The generated drivers are tested against the following:
-        Compiler          :  XC8 2.30 and above or later
-        MPLAB             :  MPLAB X 5.40
+        Compiler          :  XC8 2.31 and above or later
+        MPLAB             :  MPLAB X 5.45
 */
 
 /*
@@ -57,8 +57,8 @@ void SYSTEM_Initialize(void)
 
 void OSCILLATOR_Initialize(void)
 {
-    // SCS FOSC; SPLLEN disabled; IRCF 16MHz_HF; 
-    OSCCON = 0x78;
+    // SCS FOSC; SPLLEN disabled; IRCF 8MHz_HF; 
+    OSCCON = 0x70;
     // TUN 0; 
     OSCTUNE = 0x00;
     // SBOREN disabled; 
